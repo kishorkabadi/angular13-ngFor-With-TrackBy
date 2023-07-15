@@ -1,0 +1,14 @@
+<app-top-bar></app-top-bar>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<div>
+  <h4>For Loop Example</h4>
+  <ul>
+    <li *ngFor="let choose of Numbers; let i = index; trackBy: tracMoreNumbers">
+      <h3>{{ choose }}</h3>
+    </li>
+  </ul>
+</div>
+<input type="button" (click)="getMoreNumbers()" value="click" />
